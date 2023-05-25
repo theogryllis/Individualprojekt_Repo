@@ -8,9 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theo Gryllis - Web Developer</title>
+
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("pBAcrXXg0IB6iokzK");
+    })();
+    </script>
 </head>
 <body>
 
+
+    <!Navbar>
     <header>
         <div class="header-row">
             <!--<div class="brand-logo">
@@ -33,6 +45,43 @@
     </header>
 
 
+    <!Content>
+    <section id="Home">
+        <div class="container">
+            <h1>Hello, my name is <span class="accent-text">Theo</span></h1>
+        </div>
+    </section>
+
+    <section id="About" class="about-me dark-bg">
+        <div class="container">
+            <h2><span class="accent-text">about</span></h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Ultricies morbi urna lectus magna quisque ultricies velit enim nisi mi volutpat amet id id porta auctor at viverra consequat turpis quam enim amet vulputate.</p>
+        </div>
+    </section>
+        
+    <section id="Work">
+        <div class="container">
+            <h2><span class="accent-text">work</span></h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Ultricies morbi urna lectus magna quisque ultricies velit enim nisi mi volutpat amet id id porta auctor at viverra consequat turpis quam enim...</p>
+        </div>
+    </section>
+
+    <!Contact Form>
+    <section id="Contact" class="dark-bg">
+        <div class="container">
+            <h2><span class="accent-text">Contact</span></h2>
+            <div class="container-form">
+                <div class="form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="email" placeholder="Email" required>
+                    <textarea id="message" rows="10" placeholder="Your message" required></textarea>
+                    <button onclick="sendMail()">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="fullpage-menu">
         <div class="fullpage-menu-inner">
@@ -43,23 +92,20 @@
                 <span></span>
             </div>
             <nav>
-                <ul class="main-menu">
-                    <li><a href="javascript:void(0)"><span
+                <ul id="mainMenu" class="main-menu">
+                    <li><a href="#Home"><span
                     data-clip="Home">Home</span></a></li>
-                    <li><a href="javascript:void(0)"><span
+                    <li><a href="#About"><span
                     data-clip="About">About</span></a></li>
-                    <li><a href="javascript:void(0)"><span
+                    <li><a href="#Work"><span
                     data-clip="Work">Work</span></a></li>
-                    <li><a href="javascript:void(0)"><span
+                    <li><a href="#Contact"><span
                     data-clip="Contact">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
     </section>
 
-    
-
-    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
