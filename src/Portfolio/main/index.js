@@ -81,3 +81,4 @@ mainMenu.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	navTl.reversed(!navTl.reversed());
 })
+
